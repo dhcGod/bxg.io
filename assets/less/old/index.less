@@ -1,0 +1,90 @@
+@import './base.less';
+//侧导航
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #2f4050;
+  color: #a9b0c2;
+  .user{
+    background-color:#243443;
+    padding: 30px 0;
+    text-align: center;
+    img{
+      width: 75px;
+      height: 75px;
+    }
+    h4{
+      padding-top: 10px;
+    }
+  }
+//菜单列表
+  .menu {
+    margin-top: 30px;
+      ul{
+        padding: 0;
+        margin:0;
+        a {
+          display: block;
+          text-decoration: none;
+          color: #a9b0c2;
+          padding: 10px 30px;
+        }
+        a:hover{
+          color: #fff;
+        }
+        li {
+          list-style: none;
+        }
+        ul a{
+          padding: 10px 60px;
+        }
+      }
+    }
+}
+//右边主体
+.main {
+  margin-left: 180px;
+  height: 1000px;
+  background-color:#F5F6F8;
+  //头部
+  .header{
+    .navbar-default{
+      background-color: #fff;
+    }
+    .fa-navicon {
+      color: #fff;
+      font-size: 30px;
+    }
+    .navbar > .container-fluid .navbar-brand{
+      margin-left: 5px;
+    }
+    .navbar-brand{
+      background-color: #5cb85c;
+      width: 40px;
+      height: 40px;
+      padding: 5px 5px;
+      text-align: center;
+      margin-top: 5px;
+      &:hover{
+        background-color: #5cb85c;
+      }
+    }
+  }
+  //主体
+  .body {
+    padding: 0 20px;
+    .breadcrumb{
+      background-color: #fff;
+      border: 1px solid #e7e7e7;
+    }
+      .table th,
+      .table td {
+        font-weight: 400;
+        text-align: center;
+      }
+
+  }
+}
