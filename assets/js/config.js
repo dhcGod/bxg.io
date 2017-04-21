@@ -10,10 +10,12 @@ require.config({
         cookie:'node_modules/jquery.cookie/jquery.cookie',
         less:'node_modules/less/dist/less',
         nprogress: 'node_modules/nprogress/nprogress',
+        bootstrap: 'node_modules/bootstrap/dist/js/bootstrap',
 
         //¸öÈË
         common:'assets/js/common',
-        login:'assets/js/index/login'
+        login:'assets/js/index/login',
+        teacherList: 'assets/js/teacher/list'
     }
 })
 require( ['common','less'] );

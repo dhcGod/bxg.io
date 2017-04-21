@@ -29,10 +29,20 @@ define( [
     var html = template('profileId',profile);
     $('.aside .profile').html(html);
 
-        $.ajax({
-            url:'/api/teacher'
-        })
-})
+
+    var pathname = location.pathname;
+    var r1 = /^\/$|php$|index$/;
+    var r2 = /\/([^/]+\/[^/]+)$/;
+    if(r1.test(pathname)){
+        $('.index').addClass('active');
+    } else{
+        //$('.' + r2.exec( pathname )[ 1 ].replace( '/', '-') ).addClass('active');
+
+        $(pathname.replace(/.+\/(.+)\/(.+)/,'.$1-$2')).addClass('active');
+    }
+
+
+});
 //判断在本地是否登录过
 // 判断cookie里是否含有phpsessid 跟页是否在登录页面上
 //if(!$.cookie('PHPSESSID') && location.pathname!='/index.php/login'){

@@ -16,7 +16,8 @@
     "jquery.cookie": "^1.4.1",
     "less": "^2.7.2",
     "nprogress": "^0.2.0",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "requirejs": "^2.3.3"
   },
   "devDependencies": {},
   "description": ""
