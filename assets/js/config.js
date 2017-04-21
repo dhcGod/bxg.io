@@ -4,7 +4,7 @@
 require.config({
     baseUrl:'/',
     paths:{
-        //µÚÈý·½
+        //ç¬¬ä¸‰æ–¹
         jquery:'node_modules/jquery/dist/jquery',
         template:'node_modules/art-template/lib/template-web',
         cookie:'node_modules/jquery.cookie/jquery.cookie',
@@ -12,10 +12,16 @@ require.config({
         nprogress: 'node_modules/nprogress/nprogress',
         bootstrap: 'node_modules/bootstrap/dist/js/bootstrap',
 
-        //¸öÈË
+        //ä¸ªäºº
         common:'assets/js/common',
         login:'assets/js/index/login',
-        teacherList: 'assets/js/teacher/list'
+        teacherList: 'assets/js/teacher/list',
+        filter:'assets/js/artTemplateFilter'
+    },
+    shim:{
+        bootstrap:{
+            deps:['jquery']
+        }
     }
 })
 require( ['common','less'] );
